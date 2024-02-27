@@ -60,9 +60,9 @@ export default function App() {
       <div style={searchStyle}>
         <input style={inpSt} type="text" placeholder="Search for countries" onChange={handleSearch}/>
       </div>
-     <div  style={containerStyle}>{filteredCountries.map((ele) => {
+     <div  style={containerStyle} className="countryCard">{filteredCountries.map((ele) => {
         return (
-          <div key={ele.cca3} style={cardStyle}>
+          <div className="countryCard" key={ele.cca3} style={cardStyle}>
             <img
               src={ele.flags.png}
               alt={`Flag of ${ele.flags.png}`}
